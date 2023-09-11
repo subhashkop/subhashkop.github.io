@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+
+<head>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+  
+
+  <script>
+     $.ajax({
+        type: 'GET',
+        url: 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd',
+        success: function (data) {
+          console.log(JSON.parse(data));;
+        },
+      });
+  </script>
+
+</body>
+
+
+
+
+</html>
